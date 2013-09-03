@@ -1,0 +1,16 @@
+Instalation
+
+1.Make sure your server meets the requirements:
+- Apache
+- PHP
+- MySQL
+2.Download a .zip file of the PHP URL shortener script files
+3.Upload the contents of the .zip file to your web server
+4.Update the database and site info in libs/engine.php
+5.Import the SQL table called table.sql (using phpMyAdmin)
+6.Rename htaccess.txt to .htaccess
+7.You might need to change the path of 404 redirect in .htaccess if using a subdirectory
+
+==========================================
+Project Developed by Magnxpyr Network http://www.magnxpyr.com
+Short String URL http://www.ssurl.tk
