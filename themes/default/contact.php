@@ -1,7 +1,7 @@
 <?php
 /*
 * @copyright  Copyright (C) 2006 - 2013 Magnxpyr Network. All rights reserved.
-* @license    GNU General Public License version 3; see LICENSE.txt
+* @license    GNU General Public License version 3; see LICENSE
 */
 
 require 'header.php';
@@ -23,7 +23,7 @@ if ( isset($status) != '' ) {
 
 <div id="container">
 	<div style="margin: 0 0 30px 200px;"><h2><?php echo $results['pageTitle']; ?></h2></div>
-	
+
 	<form action="#" method="post">
 	<ul style="margin-left: 200px;">
 		<li>

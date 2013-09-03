@@ -1,7 +1,7 @@
 <?php 
 /*
 * @copyright  Copyright (C) 2006 - 2013 Magnxpyr Network. All rights reserved.
-* @license    GNU General Public License version 3; see LICENSE.txt
+* @license    GNU General Public License version 3; see LICENSE
 */
 ?>
 
@@ -9,7 +9,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title><?php echo SITE_NAME . $results['pageTitle']; ?></title>
+	<title><?php echo SITE_NAME . ' | ' . $results['pageTitle']; ?></title>
 	<link rel="stylesheet" href="<?php echo PATH_BASE ?>/themes/default/css/style.css" />
 </head>
 

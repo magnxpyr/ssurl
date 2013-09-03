@@ -5,15 +5,15 @@
 */
 
 ini_set( "display_errors", true ); // Set to display errors: true/false
-date_default_timezone_set( "Europe/Bucharest" ); // Set your timezone. Comment to get the server time
+// date_default_timezone_set( "Europe/Bucharest" ); // Set your timezone. Comment to get the server time
 define( "DB_TYPE", "mysql" ); // mysql type
 define( "DB_HOST", "localhost" ); // mysql host name; usually is localhost
 define( "DB_NAME", "shorturl" ); // your database name
 define( "DB_USER", "root" ); // your database user
 define( "DB_PASS", "bingo" ); // your database password
 
-define( "SITE_NAME", "Short String URL | " ); // set website name
-define( "BASE_URL", "http://localhost/shorturl/" ); //base url
+define( "SITE_NAME", "Short String URL" ); // set website name
+define( "BASE_URL", "http://localhost/ssurl/" ); //base url
 define( "CONTACT_MAIL", "netxpyr@gmail.com" ); // contact mail for the contact form
 
 // ------------------------------------------------------------------------------------------------

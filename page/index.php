@@ -7,6 +7,7 @@ session_start();
 require '../libs/engine.php';
 require '../libs/shorturl.php';
 require '../libs/sendmail.php';
+require '../libs/users.php';
 
 
 $action = isset( $_GET['action'] ) ? $_GET['action'] : '';
@@ -49,6 +50,7 @@ function homepage() {
 	require( PATH_THEME . 'default/homepage.php' );
 }
 
+// Shorten a new URL
 function shorten() {
 	$data = ShortURL::getList( $_GET['url'] );
 	$results = array();
@@ -71,6 +73,7 @@ function shorten() {
 	require( PATH_THEME . 'default/shorten.php' );
 }
 
+// Create contact page and email send
 function contact() {
 	$results = array();
 	$results['pageTitle'] = 'Contact';
@@ -88,12 +91,14 @@ function contact() {
 	require( PATH_THEME . 'default/contact.php' );
 }
 
+// Create about page
 function about() {
 	$results = array();
 	$results['pageTitle'] = 'About';
 	require( PATH_THEME . 'default/about.php' );
 }
 
+// Generate error page
 function error() {
 	$results = array();
 	$results['pageTitle'] = 'Error 404';

@@ -1,6 +1,6 @@
 ##
 # @copyright  Copyright (C) 2006 - 2013 Magnxpyr Network. All rights reserved.
-# @license    GNU General Public License version 3; see LICENSE.txt
+# @license    GNU General Public License version 3; see LICENSE
 ##
 
 Options +FollowSymLinks
@@ -16,5 +16,5 @@ RewriteRule ^([1-9a-zA-Z]{1,6})$ index.php?string=$1 [L]
 RewriteRule ^$ page/index.php?action=homepage [L]
 RewriteRule ^page/([a-z]+)$ page/index.php?action=$1 [L]
 
-ErrorDocument 404 /shorturl/page/error
+ErrorDocument 404 /ssurl/page/error
 
