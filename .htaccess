@@ -1,0 +1,20 @@
+##
+# @copyright  Copyright (C) 2006 - 2013 Magnxpyr Network. All rights reserved.
+# @license    GNU General Public License version 3; see LICENSE.txt
+##
+
+Options +FollowSymLinks
+RewriteEngine On
+
+# Rewrite short urls
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-s
+RewriteCond %{REQUEST_URI} page/index.php?action=homepage
+RewriteRule .? - [S=1]
+RewriteRule ^([1-9a-zA-Z]{1,6})$ index.php?string=$1 [L]
+RewriteRule ^$ page/index.php?action=homepage [L]
+RewriteRule ^page/([a-z]+)$ page/index.php?action=$1 [L]
+
+ErrorDocument 404 /shorturl/page/error
+

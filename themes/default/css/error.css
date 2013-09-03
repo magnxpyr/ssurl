@@ -1,0 +1,54 @@
+/*
+* @copyright  Copyright (C) 2006 - 2013 Magnxpyr Network. All rights reserved.
+* @license    GNU General Public License version 3; see LICENSE.txt
+*/
+
+* { 
+	font-size: 11px;
+	color: #5F6565;
+	font-family: Arial, Helvetica, sans-serif;
+}
+body { background: #efefef; }
+
+a, a:active { color: #aaa; text-decoration: none; }
+
+#wrapper { 
+	width: 500px;
+	position: absolute;
+	margin: -180px 0 0 -230px;
+	top: 50%;
+	left: 50%;
+	background-color: #fff;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+	border: 1px solid #dfdfdf;
+}
+
+#errorboxbody {
+	margin: 20px;
+	padding: 10px;
+	text-align: left;
+}
+
+#errorbox { display: inline-block; width: 200px; }
+
+.errorcode { 
+	font-size: 7em; 
+	color: #cfcfcf;
+	text-shadow: 0 0 3px #999; 
+	-moz-text-shadow: 0 0 2px #000;
+	-webkit-text-shadow: 0 0 2px #000;
+	margin: 0px;
+}
+
+.errormessage { font-size: 1.5em; color: #afafaf; margin: 0px; }
+
+#errorboxbody h2 {
+	font-weight:normal; 
+	font-size:1.5em;
+	color: #ccc;
+	margin-bottom: 15px;
+}
+
+#message { display: inline-block; width: 200px; border-left: 1px solid #dfdfdf; padding-left: 20px; }
